@@ -10,6 +10,6 @@ export default defineConfig({
     },
     esbuild:{
         jsx:'transform',
-        jsxInject: 'import {createElement} from "yaff"'
+        jsxInject: 'import {createElement,fragment} from "yaff"'
     }
 })

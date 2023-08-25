@@ -1,0 +1,1 @@
+export const fragment = "Yaff.Fragment" as const;

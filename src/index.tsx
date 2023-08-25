@@ -1,7 +1,7 @@
 import {render} from "@/yaff/render.ts";
 
 function Component () {
-    return <div class="123">LOL</div>
+    return <>aaa</>
 }
 
 function App () {

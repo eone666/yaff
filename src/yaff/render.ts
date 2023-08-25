@@ -1,4 +1,4 @@
-import {YaffElement} from "yaff";
+import {fragment, YaffElement} from "yaff";
 
 
 function checkIsYaffStringOrNum(yaffElement: YaffElement | string | number): yaffElement is string | number {
@@ -7,6 +7,20 @@ function checkIsYaffStringOrNum(yaffElement: YaffElement | string | number): yaf
 export function render(yaffElement: YaffElement | string | number, container: HTMLElement){
     if(checkIsYaffStringOrNum(yaffElement)) {
         container.appendChild(document.createTextNode(String(yaffElement)))
+        return;
+    }
+    // @ts-ignore
+    if(yaffElement.tag === fragment){
+        if(yaffElement.children){
+            // @ts-ignore
+            yaffElement.children.forEach(child=>{
+                if(child){
+                    // @ts-ignore
+                    render(child, container)
+
+                }
+            })
+        }
         return;
     }
     const domElement = document.createElement(yaffElement.tag);

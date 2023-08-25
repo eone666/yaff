@@ -20,6 +20,7 @@
     /* JSX */
     "jsx": "preserve",
     "jsxFactory": "createElement",
+    "jsxFragmentFactory": "fragment",
     /* Aliases */
     "baseUrl": "./src",
     "paths": {
