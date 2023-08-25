@@ -1,11 +1,7 @@
-import {render} from "../yaff/render.ts";
+import {render} from "yaff";
+import App from "@/App.tsx";
+import './globals.css'
 
-function Component () {
-    return <>aaa</>
-}
 
-function App () {
-    return <div class="123">Hello world <Component/></div>
-}
 
 render(<App/>, document.getElementById('app')!)

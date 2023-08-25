@@ -23,7 +23,7 @@
     "jsxFragmentFactory": "fragment",
     /* Aliases */
     "paths": {
-      "jaff/*": ["./yaff"],
+      "yaff": ["./yaff"],
       "@/*": ["./src/*"]
     }
   },
