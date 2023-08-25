@@ -22,10 +22,9 @@
     "jsxFactory": "createElement",
     "jsxFragmentFactory": "fragment",
     /* Aliases */
-    "baseUrl": "./src",
     "paths": {
-      "jaff/*": ["yaff"],
-      "@/*": ["*"]
+      "jaff/*": ["./yaff"],
+      "@/*": ["./src/*"]
     }
   },
   "include": [

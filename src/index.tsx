@@ -1,4 +1,4 @@
-import {render} from "@/yaff/render.ts";
+import {render} from "../yaff/render.ts";
 
 function Component () {
     return <>aaa</>

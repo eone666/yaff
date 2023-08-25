@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
     resolve: {
         alias: {
-            "yaff": path.resolve(__dirname, './src/yaff'),
+            "yaff": path.resolve(__dirname, './yaff'),
             "@": path.resolve(__dirname, './src')
         }
     },

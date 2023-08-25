@@ -1,4 +1,4 @@
-import {fragment, YaffElement} from "yaff";
+import {fragment, YaffElement} from "./index";
 
 
 function checkIsYaffStringOrNum(yaffElement: YaffElement | string | number): yaffElement is string | number {
