@@ -1,1 +1,1 @@
-export const fragment = "Yaff.Fragment" as const;
+export const fragment = Symbol('Yaff.Fragment')

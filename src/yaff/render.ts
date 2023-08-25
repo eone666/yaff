@@ -9,15 +9,11 @@ export function render(yaffElement: YaffElement | string | number, container: HT
         container.appendChild(document.createTextNode(String(yaffElement)))
         return;
     }
-    // @ts-ignore
     if(yaffElement.tag === fragment){
         if(yaffElement.children){
-            // @ts-ignore
             yaffElement.children.forEach(child=>{
                 if(child){
-                    // @ts-ignore
                     render(child, container)
-
                 }
             })
         }
@@ -30,10 +26,8 @@ export function render(yaffElement: YaffElement | string | number, container: HT
         })
     }
     if(yaffElement.children){
-        // @ts-ignore
         yaffElement.children.forEach(child=>{
             if(child){
-                // @ts-ignore
                 render(child, domElement)
 
             }
