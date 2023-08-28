@@ -1,5 +1,6 @@
 import {createElement} from './createElement.ts'
-import {render,fragment} from "./render.ts";
+import {render} from "./render.ts";
+import {fragment} from "./fragment.ts";
 import type {YaffElement,YaffNode,JSXElementConstructor} from './types.ts'
 
 export {

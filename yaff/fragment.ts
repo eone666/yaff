@@ -1,0 +1,1 @@
+export const fragment = Symbol('Yaff.Fragment')

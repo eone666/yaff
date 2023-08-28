@@ -1,4 +1,4 @@
-import {fragment} from "./render.ts";
+import {fragment} from "./fragment.ts";
 
 export type YaffText = string | number;
 

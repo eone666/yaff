@@ -1,7 +1,6 @@
-import {YaffElement} from "./index";
+import {YaffElement} from "./types.ts";
+import {fragment} from "./fragment.ts";
 
-
-export const fragment = Symbol('Yaff.Fragment')
 
 function checkIsStringOrNum(yaffElement: YaffElement | string | number): yaffElement is string | number {
     return ['number', 'string'].includes(typeof yaffElement);
