@@ -1,7 +1,7 @@
 import {YaffElement} from "./index";
 
 
-export const fragmentSymbol = Symbol('Yaff.Fragment')
+export const fragment = Symbol('Yaff.Fragment')
 
 function checkIsStringOrNum(yaffElement: YaffElement | string | number): yaffElement is string | number {
     return ['number', 'string'].includes(typeof yaffElement);
@@ -11,7 +11,7 @@ export function render(yaffElement: YaffElement | string | number, container: HT
         container.appendChild(document.createTextNode(String(yaffElement)))
         return;
     }
-    if(yaffElement.tag === fragmentSymbol){
+    if(yaffElement.tag === fragment){
         if(yaffElement.children){
             yaffElement.children.forEach(child=>{
                 if(child){

@@ -1,4 +1,4 @@
-import {fragmentSymbol} from "./render.ts";
+import {fragment} from "./render.ts";
 
 export type YaffText = string | number;
 
@@ -6,7 +6,7 @@ export type YaffChild = YaffElement | YaffText;
 
 export type YaffNodeArray = YaffNode[]
 
-export type YaffFragmentTag = typeof fragmentSymbol;
+export type YaffFragmentTag = typeof fragment;
 
 export type YaffNode = YaffChild | YaffNodeArray | null | undefined;
 
