@@ -1,5 +1,5 @@
 import {render} from "yaff";
-import App from "@/App.tsx";
+import App from "@/App";
 import './globals.css'
 
 

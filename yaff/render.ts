@@ -1,5 +1,5 @@
-import {YaffElement} from "./types.ts";
-import {fragment} from "./fragment.ts";
+import {YaffElement} from "./types";
+import {fragment} from "./fragment";
 
 
 function checkIsStringOrNum(yaffElement: YaffElement | string | number): yaffElement is string | number {
