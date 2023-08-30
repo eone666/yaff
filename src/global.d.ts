@@ -1,0 +1,1 @@
+/// <reference types="yaff/lib/jsx-runtime" />

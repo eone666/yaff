@@ -1,0 +1,21 @@
+{
+  "name": "yaff-dom",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "author": "Ivan Avdeyev",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.5.7",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "yaff": "workspace:*"
+  }
+}

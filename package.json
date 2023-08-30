@@ -1,15 +1,24 @@
 {
-  "name": "yaff-example-app",
-  "private": true,
+  "name": "yaff-homepage",
   "version": "0.0.0",
-  "type": "module",
+  "author": "Ivan Avdeyev",
   "scripts": {
+    "build-packages": "pnpm -r build",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "pnpm build-packages && tsc && vite build",
     "preview": "vite preview"
+  },
+  "dependencies": {
+    "yaff": "workspace:*",
+    "yaff-dom": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vite-plugin-run": "^0.4.1"
+  },
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=8"
   }
 }
