@@ -6,5 +6,5 @@ export interface ContainerProps extends WithChildren{
 }
 
 export default function Container({children, className}: ContainerProps){
-    return <div className={cn("w-[1200px] mx-auto", className)}>{children}</div>
+    return <div className={cn("max-w-[1200px] mx-auto px-3", className)}>{children}</div>
 }
