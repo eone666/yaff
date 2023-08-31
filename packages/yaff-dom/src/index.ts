@@ -19,7 +19,6 @@ function renderChildren (element: YaffElement, container: HTMLElement): void {
                 }
             })
         }
-        console.log(element)
     }
 }
 export function render(child: YaffChild, container: HTMLElement){
