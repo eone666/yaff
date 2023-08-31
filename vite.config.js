@@ -2,6 +2,7 @@ import {defineConfig} from "vite";
 import run from "vite-plugin-run";
 
 export default defineConfig({
+    base: process.env.NODE_ENV === "development" ? "/" : "/yaff/",
     plugins: [
         run([{
             name: 'build packages',
