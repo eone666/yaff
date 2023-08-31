@@ -6,7 +6,7 @@ type YaffNode = YaffElement | YaffNodeArray | string | number | null | undefined
 
 type YaffChild = YaffElement | string | number;
 
-function createElement(element: any, props: any, children: any){
+function createElement(element: any, props: any, ...children: YaffChild[]): YaffElement{
     if(typeof element === 'function'){
         return element(props)
     }

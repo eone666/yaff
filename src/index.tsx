@@ -3,4 +3,4 @@ import {render} from "yaff-dom";
 
 import App from "./App.tsx";
 
-render(<App/>)
+render(<App/>, document.getElementById("root")!)
