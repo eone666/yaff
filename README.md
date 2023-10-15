@@ -14,12 +14,6 @@ Dumb React Re-Implementation
   git clone https://github.com/eone666/yaff.git
 ```
 
-or
-
-```bash
-  git clone git@github.com:eone666/yaff.git
-```
-
 ### Go to the project directory
 
 ```bash
